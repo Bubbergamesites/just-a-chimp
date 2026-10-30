@@ -1,0 +1,9 @@
+{
+    admin off
+}
+:8000 {
+    handle_path /globbysgonnakillyou/* {
+        reverse_proxy 127.0.0.1:4000
+    }
+    respond 404
+}
